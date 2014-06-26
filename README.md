@@ -37,3 +37,6 @@ Need to be done
 
 * Node.js app as a CoffeeScript files compiler
 * Cross browser upload form
+* Read image locally and show while uploading
+* Add event bus for React
+* Paging & Infinite scroll down

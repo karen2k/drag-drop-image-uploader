@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@mixin animate ($str) {
+  -webkit-transition:$str;
+  -moz-transition:$str;
+  -o-transition:$str;
+  transition:$str;
+}
+
 html, body{
   margin:0;
   padding:0;
@@ -21,6 +28,9 @@ html, body{
       position:relative;
       margin:10px 20px;
       border:1px solid black;
+      opacity:0;
+      cursor:pointer;
+      @include animate(all .5s);
     
       .title{
         position:absolute;
@@ -29,6 +39,10 @@ html, body{
         bottom:0;
         color:white;
         padding:2% 5%;
+      }
+      
+      &.visible{
+        opacity:1;
       }
     }
   }
@@ -46,6 +60,7 @@ html, body{
       width:100%;
       height:100%;
       opacity:0;
+      cursor:pointer;
     }
 
     div{
@@ -53,6 +68,41 @@ html, body{
       text-align:center;
       font-weight:bold;
       text-transform:uppercase;
+    }
+  }
+  
+  .photoPupup{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    display:none;
+    cursor:pointer;
+    
+    .photoPopupBG{
+      position:absolute;
+      left:0;
+      top:0;
+      width:100%;
+      height:100%;
+      background:rgba(0, 0, 0, .8);
+    }
+    
+    .photoPopupContent{
+      position:relative;
+      left:50%;
+      width:1000px;
+      margin:100px 0 0 -500px;
+      background:white;
+      
+      img{
+        margin:20px;
+      }
+    }
+    
+    &.visible{
+      display:block;
     }
   }
 }

@@ -7,6 +7,10 @@ define(['react', 'PhotoComponent', 'ReactBackboneMixin'], function (React, Photo
         collection: []
       };
     },
+    onPhotoClick: function(i){
+      if(this.props.onPhotoClick && this.props.collection.at(i))
+        this.props.onPhotoClick(this.props.collection.at(i));
+    },
     render: function(){
       var i, model,
           photosModels = this.props.collection,
@@ -17,7 +21,8 @@ define(['react', 'PhotoComponent', 'ReactBackboneMixin'], function (React, Photo
           key: i,
           id: model.get('id'),
           name: model.get('name'),
-          thumb_url: model.get('thumb_url')
+          thumb_100: model.get('thumb_100'),
+          onPhotoClick: this.onPhotoClick
         }));
       }
       return React.DOM.div({className: 'photos'}, photos);

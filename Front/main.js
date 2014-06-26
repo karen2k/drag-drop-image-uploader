@@ -13,6 +13,7 @@ requirejs.config({
     PhotosListComponent: '../app/components/PhotosList',
     PhotoComponent: '../app/components/Photo',
     PhotosUploadComponent: '../app/components/PhotosUpload',
+    PhotoPopupComponent: '../app/components/PhotoPopup',
 
     // React mixins
     ReactBackboneMixin: '../app/mixins/ReactBackbone',
@@ -22,6 +23,9 @@ requirejs.config({
 
     // Backbone collections
     PhotosCollection: '../app/collections/Photos',
+    
+    // Utils
+    UploadPhotoUtil: '../app/utils/UploadPhoto',
   },
   shim : {
     backbone : {
