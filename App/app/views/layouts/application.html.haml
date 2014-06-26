@@ -1,0 +1,9 @@
+!!! 5
+%html
+  %head
+    %title Hello grid
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
+    %script{src: '/front/require.js', 'data-main' => '/front/main'}
+    = csrf_meta_tags
+  %body
+    = yield

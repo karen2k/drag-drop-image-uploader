@@ -1,0 +1,58 @@
+// Place all the styles related to the Photos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body{
+  margin:0;
+  padding:0;
+}
+
+#reactRoot{
+  width:1000px;
+  margin:0 auto;
+  background:#eee;
+  overflow:hidden;
+
+  .photos{
+    .photo{
+      float:left;
+      width:100px;
+      height:100px;
+      position:relative;
+      margin:10px 20px;
+      border:1px solid black;
+    
+      .title{
+        position:absolute;
+        background:rgba(0, 0, 0, .5);
+        width:90%;
+        bottom:0;
+        color:white;
+        padding:2% 5%;
+      }
+    }
+  }
+
+  .fileUploadZone{
+    width:960px;
+    margin:20px 20px 10px 20px;
+    background:yellow;
+    position:relative;
+
+    input{
+      position:absolute;
+      left:0;
+      top:0;
+      width:100%;
+      height:100%;
+      opacity:0;
+    }
+
+    div{
+      padding:20px 10px;
+      text-align:center;
+      font-weight:bold;
+      text-transform:uppercase;
+    }
+  }
+}
