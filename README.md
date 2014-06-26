@@ -21,3 +21,9 @@ server {
   }
 }
 ```
+
+Need to be done
+===============
+
+* Node.js app as a CoffeeScript files compiler
+* Cross browser upload form
