@@ -22,6 +22,16 @@ server {
 }
 ```
 
+Start server
+============
+```php```
+cd App
+bundle install
+rake db:migrate
+rake db:seed
+rails s
+```
+
 Need to be done
 ===============
 
