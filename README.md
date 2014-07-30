@@ -1,7 +1,7 @@
 Drag&Drop Image Uploader
 ========================
 
-Simple Drag&Drop image uploader with separate back-end and front-end apps on RoR and Require.js, Backbone.js and React.js to demonstrate ways of thinking.<br>
+Simple Drag&Drop image uploader with separate back-end and front-end apps on RoR and Require.js + Backbone.js + React.js to demonstrate ways of thinking.<br>
 Written on pure JavaScript as required, but CoffeeScript is preferable for me.
 
 Main features and tech stack
