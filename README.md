@@ -1,3 +1,18 @@
+Drag&Drop Image Uploader
+========================
+
+Simple Drag&Drop image uploader with separate back-end and front-end apps on RoR and Require.js, Backbone.js and React.js to demonstrate ways of thinking.<br>
+Written on pure JavaScript as required, but CoffeeScript is preferable for me.
+
+Main features and tech stack
+----------------------------
+* Drag&Drop image uploader
+* <a href="https://github.com/karen2k/hello/tree/master/Front">Separate front-end app</a>
+* Require.js: loading js files on demand
+* <a href="https://github.com/karen2k/hello/tree/master/App">RoR back-end</a>: RESTfull API
+* Backbone.js: models and collections connection with back-end
+* Rect.js (no XJS): layout components
+
 Nginx config
 ============
 
@@ -40,3 +55,4 @@ Need to be done
 * Read image locally and show while uploading
 * Add event bus for React
 * Paging & Infinite scroll down
+* Move to CoffeeScript and add on-the-fly CoffeeScript –> JS conversion
